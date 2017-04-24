@@ -1,0 +1,25 @@
+## Java
+
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+
+## Eclipse
+.metadata
+.recommenders
+**/bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.externalToolBuilders/
+
+## OS Specific
+.DS_Store
+Thumbs.db
