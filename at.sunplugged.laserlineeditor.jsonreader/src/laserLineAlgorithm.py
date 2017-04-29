@@ -5,7 +5,6 @@ Created on 29.04.2017
 '''
 
 import jsonIds
-import math
 from operator import attrgetter
 
 
