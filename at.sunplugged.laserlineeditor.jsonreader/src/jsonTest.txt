@@ -1,0 +1,133 @@
+{
+	"LASERLINE": [{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2500,
+		"yEnd": 2500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 7500,
+		"yEnd": 7500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 12500,
+		"yEnd": 12500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 17500,
+		"yEnd": 17500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 22500,
+		"yEnd": 22500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 27500,
+		"yEnd": 27500,
+		"speed": 25000,
+		"power": 45,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2800,
+		"yEnd": 2800,
+		"speed": 25000,
+		"power": 30,
+		"frequency": 150
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2820,
+		"yEnd": 2820,
+		"speed": 25000,
+		"power": 30,
+		"frequency": 150
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2840,
+		"yEnd": 2840,
+		"speed": 25000,
+		"power": 30,
+		"frequency": 150
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2860,
+		"yEnd": 2860,
+		"speed": 25000,
+		"power": 30,
+		"frequency": 150
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2880,
+		"yEnd": 2880,
+		"speed": 25000,
+		"power": 30,
+		"frequency": 150
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2430,
+		"yEnd": 2430,
+		"speed": 25000,
+		"power": 8,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 2570,
+		"yEnd": 2570,
+		"speed": 25000,
+		"power": 8,
+		"frequency": 20
+	},
+	{
+		"xStart": 0,
+		"xEnd": 40000,
+		"yStart": 3300,
+		"yEnd": 3300,
+		"speed": 25000,
+		"power": 8,
+		"frequency": 20
+	}
+	],
+	"NULL-POINT": {
+		"x": 1000,
+		"y": 100
+	}
+}
