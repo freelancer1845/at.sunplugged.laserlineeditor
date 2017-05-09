@@ -19,6 +19,11 @@ def startingPoint(dictionary):
     startingPointText.append('0;NULL;' + str(nullPointItem.x) + ';' + str(nullPointItem.y) + '\n')
     return ''.join(startingPointText)
     
+def startingPointExplicit(nullX, nullY):
+    startingPointText = []
+    startingPointText.append('*-----Starting Point-----*\n')
+    startingPointText.append('0;NULL;' + str(nullX) + ';' + str(nullY) + '\n')
+    return ''.join(startingPointText)
 
 def groupLaserLinesByPower(sortedLaserLines):
     iterator = iter(sortedLaserLines)
@@ -87,7 +92,6 @@ def createScriptForLaserLineGroup(group):
     script = []
     script.append(createPowerHeader(group))
     script.append(createLaseringScript(group))
-    script.append(createFinish())
     
     return "".join(script)
 
@@ -100,6 +104,30 @@ def createLaserScript(dictionary):
         script.append(createScriptForLaserLineGroup(group))
     return ''.join(script)
 
+def createLaserScriptFromLaserLines(laserLines):
+    script = []
+    laserLines = sorted(laserLines, key=attrgetter('power', 'frequency'), reverse=True)
+    groupedLines = groupLaserLinesByPower(laserLines)
+    for group in groupedLines:
+        script.append(createScriptForLaserLineGroup(group))
+    return ''.join(script)
+
+def createScriptFromLaserLinesWithExplicitNullPoint(laserLines, nullX, nullY):
+    script = []
+    
+    '''Creates the header of the script'''
+    script.append('*---------------Python created script for lasering sunplugged.at. Created by Jascha Riedel---------*\n')
+    script.append(intialCommands())
+    
+    ''' Create starting point (null point)'''
+    script.append(startingPointExplicit(nullX, nullY))
+    
+    ''' Create the laser lines. This is the actual complex alogirthm'''
+    script.append(createLaserScriptFromLaserLines(laserLines))
+    
+    script.append(createFinish())
+    
+    return "".join(script)
 
 def createScriptFromJsonDictionary(dictionary):
     script = []

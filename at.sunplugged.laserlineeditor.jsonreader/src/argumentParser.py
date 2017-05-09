@@ -6,4 +6,4 @@ Created on 24.04.2017
 
 
 def parseArguments( arguments ):
-    return arguments[1]
+    return [arguments[1], arguments[2], arguments[3]]
